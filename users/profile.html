@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Store - Профиль</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../vendor/css/profile.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Каталог <i class="fas fa-shopping-bag"></i> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="users/login.html">Войти <i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="profile.html">Профиль</a>
+                        </li>
+                        <li><a class="dropdown-item" href="../orders/orders.html">Заказы</a></li>
+                        <li><a class="dropdown-item" href="#">Админ-панель</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Выйти
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7">
+            <h4 class="mt-3 mb-3">Профиль</h4>
+            <div class="col-lg-12 text-center">
+                <img width="100" height="100"
+                     src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1765bc6c014%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1765bc6c014%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2274.421875%22%20y%3D%22104.65%22%3E200x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                     class="img-thumbnail">
+            </div>
+            <form action="">
+                <div class="form-row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="small mb-1" for="inputFirstName">Имя</label>
+                            <input class="form-control py-4" id="inputFirstName" type="text" value="Валерий"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="small mb-1" for="inputLastName">Фамилия</label>
+                            <input class="form-control py-4" id="inputLastName" type="text" value="Павликов"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row mb-2">
+                    <div class="col-lg-12">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="userAvatar" size="50">
+                            <label class="custom-file-label" for="userAvatar">Выберите изображение</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-6">
+                        <label class="small mb-1" for="inputUsername">Имя пользователя</label>
+                        <input class="form-control py-4" id="inputUsername" type="text"
+                               aria-describedby="usernameHelp"
+                               value="valeriy" disabled/>
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="small mb-1" for="inputEmailAddress">Адрес электронной
+                            почты</label>
+                        <input class="form-control py-4" id="inputEmailAddress" type="email"
+                               aria-describedby="emailHelp"
+                               value="valerypavlikov@yandex.ru" disabled/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-12" style="margin-top: 33px;">
+                        <input class="btn btn-info btn-block" type="submit" value="Сохранить">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-5">
+            <h4 class="mt-3 mb-3 d-flex justify-content-between align-items-center mb-3">
+                Корзина <span class="badge badge-secondary badge-pill">3</span>
+            </h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Product name</h5>
+                    <p class="card-text">Product description</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light">
+                        <div class="row text-center">
+                            <div class="col-lg-4">
+                                <input name="basketID" type="number" class="form-control"
+                                       value="1" min="0">
+                            </div>
+                            <div class="col-lg-4">2 390 руб.</div>
+                            <div class="col-lg-4">
+                                <a href="#">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card mb-3">
+                <div class="card-footer">
+                    <p class="float-left">Итого</p>
+                    <h4 class="float-right">2 390 руб.</h4>
+                </div>
+            </div>
+            <a class="btn btn-success btn-lg float-right" href="../orders/order-create.html">
+                Оформить заказ
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- FontAwesome script -->
+<script src="../vendor/fontawesome/fontawesome-icons.js" crossorigin="anonymous"></script>
+</body>
+</html>
