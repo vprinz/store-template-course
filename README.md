@@ -1,3 +1,3 @@
-# geekshop-template
+# Course Store Template
 
-Template for Django course of GeekBrains
+Template for Django course
